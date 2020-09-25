@@ -50,7 +50,7 @@ def build_file(tasks):
     tasks well formatted
     """
     dir_path = path.dirname(os.path.realpath(__file__))
-    f = io.open(dir_path + '/todo.txt', 'w', encoding='utf8')
+    f = io.open(dir_path + '/todo.txt', 'w', encoding='utf-8')
     f.write("                ╓──────╖\n")
     f.write("                ║ TODO ║\n")
     f.write("                ╙──────╜\n\n")
