@@ -6,7 +6,7 @@ This small Python script allows you to keep a to-do list in your terminal.
 
 1. You need to have Python 3 installed.
 2. Download `todo.py` and place it wherever you want.
-3. Add a `todo` alias to `'python3 /Applications/MAMP/htdocs/python-todo/todo.py'`.
+3. Add a `todo` alias to `'python3 /path/to/your/todo.py'`.
 
 ## Usage
 
