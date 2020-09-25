@@ -110,6 +110,7 @@ def main():
         else:
             try:
                 i = sys.argv[2:]
+                a = int(i[0])
                 confirm = input("Do you really want to remove these " + str(len(i)) + " tasks? (yes/no)\n-> ")
                 if confirm == "yes":
                     i = sorted([int(k)-1 for k in i])
