@@ -12,7 +12,7 @@ def list_tasks():
     f = open(dir_path + '/todo.txt', 'r', encoding="utf-8")
 
     for l in f:
-        print(l.decode('utf-8'), end="")
+        print(l, end="")
 
     f.close()
 
@@ -107,12 +107,14 @@ def main():
     
     elif sys.argv[1] == "remove" or sys.argv[1] == "rm":
         if len(sys.argv) == 2:
-            print("You need to specify a task to remove!")
+            print("You need to specify tasks to remove!")
         else:
             try:
                 i = sys.argv[2:]
                 a = int(i[0])
-                confirm = input("Do you really want to remove these " + str(len(i)) + " tasks? (yes/no)\n-> ")
+                confirm = (input("Do you really want to remove these " + str(len(i)) + " tasks? (yes/no)\n-> ")
+                    if len(i) > 1
+                    else input("Do you really want to remove this task? (yes/no)\n-> "))
                 if confirm == "yes":
                     i = sorted([int(k)-1 for k in i])
                     for k in range(len(i)):    
