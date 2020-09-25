@@ -8,7 +8,7 @@ def list_tasks():
     Prints todo.txt
     """
     dir_path = path.dirname(os.path.realpath(__file__))
-    f = open(dir_path + '/todo.txt', 'r')
+    f = io.open(dir_path + '/todo.txt', 'r')
 
     for l in f:
         print(l, end="")
@@ -22,7 +22,7 @@ def get_tasks():
     """
     dir_path = path.dirname(os.path.realpath(__file__))
     t = []
-    o = open(dir_path + '/todo.txt', 'r')
+    o = io.open(dir_path + '/todo.txt', 'r')
     f = o.readlines()
     for i in range(len(f)):
         # Ignore the first 4 lines (title)
