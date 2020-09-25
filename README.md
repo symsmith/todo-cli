@@ -2,6 +2,8 @@
 
 This small Python script allows you to keep a to-do list in your terminal.
 
+![Animated GIF of the To-do tool in action](presentation.gif)
+
 ## Installation
 
 1. You need to have Python 3 installed.
