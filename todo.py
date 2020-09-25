@@ -12,7 +12,7 @@ def list_tasks():
     f = open(dir_path + '/todo.txt', 'r', encoding="utf-8")
 
     for l in f:
-        print(l, end="")
+        print(l.decode('utf-8'), end="")
 
     f.close()
 
