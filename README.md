@@ -1,6 +1,6 @@
 # TODO-CLI
 
-This small python script allows you to keep a to-do list in your terminal.
+This small Python script allows you to keep a to-do list in your terminal.
 
 ## Installation
 
