@@ -12,7 +12,7 @@ This small Python script allows you to keep a to-do list in your terminal.
 
 Quoting `todo help`:
 - `todo` - lists all tasks
-- `todo add 'task'` - adds a task at the end
-- `todo toggle i1 i2 ... iN` - checks or unchecks tasks i1, i2, ..., iN
-- `todo remove i1 i2 ... iN` - removes tasks i1, i2, ..., iN
+- `todo add 'task'`/`todo + 'task'` - adds a task at the end
+- `todo check i1 i2 ... iN`/`todo toggle i1 i2 ... iN` - checks or unchecks tasks i1, i2, ..., iN
+- `todo remove i1 i2 ... iN`/`todo rm i1 i2 ... iN` - removes tasks i1, i2, ..., iN
 - `todo clear` - removes all tasks

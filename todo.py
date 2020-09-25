@@ -83,7 +83,7 @@ def main():
     if len(sys.argv) == 1:
         ...
     
-    elif sys.argv[1] == "add":
+    elif sys.argv[1] == "add" or sys.argv[1] == "+":
         if len(sys.argv) == 2:
             print("You need to specify a task to add!")
         else:
@@ -103,7 +103,7 @@ def main():
             except:
                 print("Be careful to specify the index of the tasks you want to toggle!\nEx: todo toggle 1 3 4")
     
-    elif sys.argv[1] == "remove":
+    elif sys.argv[1] == "remove" or sys.argv[1] == "rm":
         if len(sys.argv) == 2:
             print("You need to specify a task to remove!")
         else:
