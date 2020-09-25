@@ -65,7 +65,7 @@ def help():
     """
     print("Help:")
     print("`todo help` - shows this help")
-    print("`todo list` - lists all tasks")
+    print("`todo` - lists all tasks")
     print("`todo add 'task'` - adds a task at the end")
     print("`todo toggle i1 i2 ... iN` - checks or unchecks tasks i1, i2, ..., iN")
     print("`todo remove i1 i2 ... iN` - removes tasks i1, i2, ..., iN")
@@ -121,9 +121,6 @@ def main():
         confirm = input("Do you really want to remove all the tasks? (yes/no)\n-> ")
         if confirm == "yes":
             tasks = []
-    
-    elif sys.argv[1] == "list":
-        ...
     
     else:
         help()
