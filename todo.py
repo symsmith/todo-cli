@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 import sys
-import io
 import os.path
 from os import path
 
@@ -10,7 +9,7 @@ def list_tasks():
     Prints todo.txt
     """
     dir_path = path.dirname(os.path.realpath(__file__))
-    f = io.open(dir_path + '/todo.txt', 'r')
+    f = open(dir_path + '/todo.txt', 'r', encoding="utf-8")
 
     for l in f:
         print(l, end="")
@@ -24,7 +23,7 @@ def get_tasks():
     """
     dir_path = path.dirname(os.path.realpath(__file__))
     t = []
-    o = io.open(dir_path + '/todo.txt', 'r')
+    o = open(dir_path + '/todo.txt', 'r', encoding="utf-8")
     f = o.readlines()
     for i in range(len(f)):
         # Ignore the first 4 lines (title)
@@ -52,7 +51,7 @@ def build_file(tasks):
     tasks well formatted
     """
     dir_path = path.dirname(os.path.realpath(__file__))
-    f = io.open(dir_path + '/todo.txt', 'w', encoding='utf-8')
+    f = open(dir_path + '/todo.txt', 'w', encoding="utf-8")
     f.write("                ╓──────╖\n")
     f.write("                ║ TODO ║\n")
     f.write("                ╙──────╜\n\n")
